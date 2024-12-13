@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(135deg, rgb(151, 172, 253), rgb(46, 69, 219));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 100%;
+    max-width: 650px;
+    min-width: 310px;
+    background-color: rgb(255, 255, 255);
+    padding: 12px 40px;
+    border-radius: 4px;
+    box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.4);
+}
+
+h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 25px;
+    color: #0d59e6;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.input_group {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+input {
+    flex: 1;
+    padding: 10px;
+    color: #000000;
+    border-radius: 4px 0 0 4px;
+    font-size: 14px;
+    border: none;
+    outline: none;
+    border: 1px solid #e5e5e5;
+
+
+}
+
+input:hover {
+    border: 1px solid #1d8548;
+}
+
+#add {
+    color: rgb(255, 255, 255);
+    background: #1d8548;
+    border: none;
+    outline: none;
+    border-radius: 0 4px 4px 0;
+    padding: 10px 10px;
+    font-weight: 600;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+}
+
+#add:hover {
+    background-color: #146b27;
+}
+
+
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 15px;
+
+}
+
+li {
+    padding: 6px;
+    margin-bottom: 10px;
+    font-size: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: rgb(0, 0, 0);
+}
+
+.delete {
+    color: white;
+    border: none;
+    background: #c93727;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: all 0.3s ease-in;
+
+}
+
+.delete:hover {
+    background-color: #b81526;
+}
+
+@media(max-width:425px) {
+    .container {
+        margin: 0 20px;
+        padding: 20px;
+
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    .input_group {
+        flex-direction: row;
+    }
+
+
+    input,
+    #add {
+        font-size: 14px;
+        padding: 8px;
+
+    }
+
+    #add {
+        padding: 8px 15px;
+    }
+
+    li {
+        padding: 8px;
+
+    }
+
+    .delete {
+        padding: 4px 8px;
+        font-size: 14px;
+    }
+}
